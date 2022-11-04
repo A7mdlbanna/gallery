@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../resources/index.dart';
 import '../widgets/index.dart';
 
 class AppSnackBar {

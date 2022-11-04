@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gallery/core/cubit/login/login_state.dart';
-import 'package:gallery/core/dto/login.dart';
 import 'package:gallery/core/utils/validator.dart';
 import 'package:gallery/ui/helper/index.dart';
-import 'package:gallery/ui/resources/app_colors.dart';
-import 'package:gallery/ui/resources/app_images_path.dart';
 import 'package:gallery/ui/widgets/app_button.dart';
 import 'package:gallery/ui/widgets/app_card.dart';
 import 'package:gallery/ui/widgets/app_text_display.dart';
@@ -13,7 +10,6 @@ import 'package:gallery/ui/widgets/text_form_field.dart';
 
 import '../../core/cubit/login/login_cubit.dart';
 import '../resources/index.dart';
-import '../widgets/app_Image.dart';
 
 final emailKey = GlobalKey<FormState>();
 final passKey = GlobalKey<FormState>();

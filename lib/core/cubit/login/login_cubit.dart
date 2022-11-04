@@ -2,16 +2,17 @@ import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:gallery/core/network/network_connection.dart';
-import 'package:gallery/ui/resources/app_routes.dart';
+import '../../../data/network/network_connection.dart';
+import '../../../data/repository/gallery_repository.dart';
+import '../../../ui/resources/app_routes.dart';
 import '../../../ui/helper/app_snack_bar.dart';
 import '../../../ui/helper/app_toast.dart';
 import '../../../ui/helper/navigator.dart';
 import '../../../ui/resources/app_strings.dart';
-import '../../dto/login.dart';
-import '../../model/user.dart';
-import '../../repository/auth_repository.dart';
-import '../../repository/user_repository.dart';
+import '../../../data/dto/login.dart';
+import '../../../data/model/user.dart';
+import '../../../data/repository/auth_repository.dart';
+import '../../../data/repository/user_repository.dart';
 import 'login_state.dart';
 
 class LoginCubit extends Cubit<LoginState> {
@@ -62,10 +63,12 @@ class LoginCubit extends Cubit<LoginState> {
     }
   }
 
-  void logout() async {
+  void logout(context) async {
     isFirstTime = true;
     _authRepository.setFirstTime(true);
     await _userRepository.removeUser();
+    GalleryRepository().removeGallery();
+    pushNameReplacement(context, AppRoutes.logInScreen);
   }
 
   TextEditingController userNameController = TextEditingController();

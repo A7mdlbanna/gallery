@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import '../model/user.dart';
-import '../utils/api_path.dart';
-import '../utils/api_service.dart';
-import '../utils/app_local_storage.dart';
+import '../../core/utils/api_path.dart';
+import '../../core/utils/api_service.dart';
+import '../../core/utils/app_local_storage.dart';
 
 class UserRepository {
   UserData? user;

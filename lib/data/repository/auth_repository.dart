@@ -1,4 +1,4 @@
-import '../utils/app_local_storage.dart';
+import '../../core/utils/app_local_storage.dart';
 
 class AuthRepository{
   final String _sharedPreferenceToken = "Token";

@@ -49,15 +49,25 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtRobotoRegular20 = TextStyle(
-    color: AppColors.white,
-    fontSize: 18.sp,
-    fontWeight: FontWeight.w700,
+  static TextStyle txtRobotoRegular32 = TextStyle(
+    color: AppColors.black4a,
+    fontSize: 32.sp,
+    fontWeight: FontWeight.w500,
   );
 
   static TextStyle txtSemiBold16 = TextStyle(
     // color: AppColors.black,
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
+  );
+  static TextStyle txtSemiBold20 = TextStyle(
+    color: AppColors.black4a,
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle txtSemiBold27 = TextStyle(
+    color: AppColors.black4a,
+    fontSize: 27.sp,
+    fontWeight: FontWeight.w700,
   );
 }

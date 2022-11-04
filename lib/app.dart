@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gallery/core/cubit/bloc_provider.dart';
 import 'package:gallery/core/cubit/network/network_cubit.dart';
 import 'package:gallery/ui/helper/screen_util_init.dart';
-import 'package:gallery/ui/screens/gellary_screen.dart';
+import 'package:gallery/ui/screens/gallery/gallery_screen.dart';
 import 'package:gallery/ui/screens/login_screen.dart';
 
-import 'core/repository/auth_repository.dart';
+import 'data/repository/auth_repository.dart';
 import 'ui/helper/index.dart';
 import 'ui/resources/index.dart';
 

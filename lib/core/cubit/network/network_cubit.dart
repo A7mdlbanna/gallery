@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:meta/meta.dart';
 
-import '../../network/network_connection.dart';
+import '../../../data/network/network_connection.dart';
 
 part 'network_state.dart';
 

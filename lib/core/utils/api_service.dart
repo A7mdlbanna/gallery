@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 
-import '../repository/auth_repository.dart';
+import '../../data/repository/auth_repository.dart';
 import 'api_path.dart';
 
 class ApiService {
@@ -84,7 +84,6 @@ class ApiService {
 
   static Future<Response<T>> upload<T>(
     String path, {
-    required String typeValue,
     required File file,
     bool isJson = true,
     bool isAuth = true,
@@ -94,8 +93,7 @@ class ApiService {
 
     // ignore: always_specify_types
     final Map<String, dynamic> map = {
-      'type': typeValue,
-      'media': await MultipartFile.fromFile(
+      'img': await MultipartFile.fromFile(
         file.path,
         filename: file.path.split('/').last,
         // contentType: MediaType.parse(lookupMimeType(file.path)!),

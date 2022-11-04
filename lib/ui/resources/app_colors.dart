@@ -9,17 +9,15 @@ class AppColors{
   static Color blue = HexColor('#7bb3ff');
   static Color blueGray = HexColor('#888888');
 
+  static Color deepRed = HexColor('#FB4949');
+  static Color red = HexColor('#C83B3B');
   static Color black4a = HexColor('#4A4A4A');
-  static Color white6e = HexColor('#6effffff');
 
-  static Color white00 = HexColor('#00ffffff');
+  static Color purple = HexColor('#EFD8F9');
+  static Color cyan = HexColor('#EBF6FF');
 
-
-  static Color white91 = HexColor('#91ffffff');
-
-  static Color amber300 = HexColor('#ffcd62');
-
-  static Color orange400 = HexColor('#fea12f');
+  static Color amber = HexColor('#FFEB38');
+  static Color orange = HexColor('#FF9900');
 
 
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gallery/ui/screens/gellary_screen.dart';
+import 'package:gallery/ui/screens/gallery/gallery_screen.dart';
 import 'package:gallery/ui/screens/login_screen.dart';
+import 'package:gallery/ui/widgets/network_error.dart';
 
 import '../resources/app_routes.dart';
 
@@ -15,6 +16,9 @@ class RouteGenerator{
 
       case AppRoutes.galleryScreen:
         return _screenRedirect(GalleryScreen(), text: 'gallery');
+
+      case AppRoutes.networkError:
+        return _screenRedirect(NetworkErrorScreen(), text: 'network error');
 
       default:
         return _errorRoute();
